@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0rem 1rem;
+    padding: auto;
+    font-size: 18px;
+}
+
+h1{
+    text-align: center;
+
+}
+
+.clock-dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.clock-dashboard .hours {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* input fields */
+.clock-dashboard .hours  input{
+    border: none;
+}
+
+.clock-dashboard .minutes  input{
+    border: none;
+}
+
+.clock-dashboard .seconds  input{
+    border: none;
+}
+/* .minutes .seconds */
+
+.clock-dashboard .minutes {
+    display: flex;
+    flex-direction: column;
+}
+
+.clock-dashboard .seconds {
+    display: flex;
+    flex-direction: column;
+}
+
+.action-button{
+    display: flex;
+    justify-content: center;
+     
+}

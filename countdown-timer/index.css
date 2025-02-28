@@ -1,55 +1,82 @@
-body{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0rem 1rem;
-    padding: auto;
-    font-size: 18px;
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0rem 1rem;
+  padding: auto;
+  font-size: 18px;
 }
 
-h1{
-    text-align: center;
-
+:root {
+  --btn-cancel-bg-color: red;
+  --btn-reset-bg-color: red;
+  --btn-continue-bg-color: green;
+  --btn-pause-bg-color: rgb(193, 193, 138);
+  --btn-color: white;
+}
+h1 {
+  text-align: center;
 }
 
-.clock-dashboard{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.clock-dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.clock-dashboard .hours {
-    display: flex;
-    flex-direction: column;
+.clock-dashboard .hours--card {
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* input fields */
-.clock-dashboard .hours  input{
-    border: none;
+.clock-dashboard .hours--card input {
+  border: none;
 }
 
-.clock-dashboard .minutes  input{
-    border: none;
+.clock-dashboard .minutes--card input {
+  border: none;
 }
 
-.clock-dashboard .seconds  input{
-    border: none;
+.clock-dashboard .seconds--card input {
+  border: none;
 }
 /* .minutes .seconds */
 
-.clock-dashboard .minutes {
-    display: flex;
-    flex-direction: column;
+.clock-dashboard .minutes--card {
+  display: flex;
+  flex-direction: column;
 }
 
-.clock-dashboard .seconds {
-    display: flex;
-    flex-direction: column;
+.clock-dashboard .seconds--card {
+  display: flex;
+  flex-direction: column;
 }
 
-.action-button{
-    display: flex;
-    justify-content: center;
-     
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.action-button .pause {
+  color: var(--btn-color);
+  background-color: var(--btn-pause-bg-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.action-button .reset {
+  margin-left: 0.5rem;
+  color: var(--btn-color);
+  background-color: var(--btn-reset-bg-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  /* background-color:  */
+
 }
